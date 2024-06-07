@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none} 
+	.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+	#contact-form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input, #contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+</style>
+<script language="JavaScript"> 
+var i = 0; var path = new Array(); 
+	const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const name = form.elements.name.value;
+  const email = form.elements.email.value;
+  const message = form.elements.message.value;
+
+  if (name && email && message) {
+    // Form is valid, do something here (e.g. send form data to a server)
+  } else {
+    // Form is invalid, display an error message
+  }
+});
+
+// LIST OF IMAGES 
+path[0] = "images/RHSgarden.png"; 
+path[1] = "images/RHSgarden2.png"; 
+
+function swapImage() 
+{ 
+document.slide.src = path[i]; 
+if(i < path.length - 1) i++; 
+else i = 0; 
+setTimeout("swapImage()",15000); 
+} 
+window.onload=swapImage; 
+</script> 
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-green w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#parks" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PARKS&nbsp;</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT US</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#parks" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PARKS</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large"  onclick="myFunction()">CONTACT</a>
+
+</div>
+
+<!-- Page content -->
+
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+      <img src="images/green.jpg" alt="green" style="width:60%;height:60%;"> 
+	  <h2 class="w3-wide">Green Is The New Black</h2>
+    <p class="w3-opacity"><i></i><p>
+    <p class="w3-justify">This website has the intention of encouraging Manchester's youth, between the ages of 18 to 25, to spend time exploring your local green spaces, which leads to stronger connections with nature at your doorstep. The website aims to emphasise the many advantages of being outside, ranging from social interaction and physical fitness to mental health and wellbeing. The website helps young individuals just like you to discover the beauty and peacefulness of nearby green areas while encouraging a sustainable lifestyle and a stronger feeling of community. It does this by highlighting accessible parks, trails, and outdoor activities which you will find below.</p>
+    
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black w3-center" id="parks">
+   <h1> Parks&nbsp;</h1>
+	</div>
+	 <div class="w3-container w3-content w3-center w3-padding-64" >
+		 <img height="45%" name="slide" src="images/RHSgarden.png" width="55%" />
+
+    <p class="w3-opacity"><i></i><p> 
+    <p class="w3-justify">Are you looking for a family day out in Manchester where you can appreciate nature? After four years of digging, building and planting, the spectacular 154-acre RHS Bridgewater Garden in Salford opened to the public in 2021, and continues to beckon outdoor enthusiasts of all ages.</p>
+    <p class="w3-justify">&nbsp;The outdoor projects and green spaces at the RHS Garden Bridgewater have been designed to improve the environment, while enriching and developing the lives of people in the local community. By combining history and heritage with world-class horticulture, the team at Bridgewater have created garden spaces for everyone to enjoy.&nbsp; </p>
+	  <p class="w3-justify">The RHS Garden Bridgewater is packed with outdoor activities for the whole family to get involved with – there is so much to see and experience! Head to the Peel Learning Garden, which is located within the Weston Walled Garden and is a space set up entirely for outdoor learning. It features the ‘Plant Factory’, and promotes a love of gardening and the outdoors in young people.</p>
+		 <br>
+		 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2373.35074101136!2d-2.4003949228746526!3d53.497929672333555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ba8e6a2b9847b%3A0x476948edb147b08!2sRHS%20Garden%20Bridgewater!5e0!3m2!1sen!2suk!4v1717768421640!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		 <br> 
+		 <div class="w3-container w3-content w3-center w3-padding-64" >
+	<img src="images/heatonpark.png" alt="Picture of Heaton Park"  class="center" style="width:45%;height:45%;align:center;">
+    <p class="w3-opacity"><i></i><p> 
+    <p class="w3-justify">Heaton’s appeal starts young, with an Animal Centre that, alongside the traditional complement of farmyard animals – cows, goats, rabbits, poultry, sheep and donkeys – boasts some more exotic species. It’s not often the Nativity features alpacas and peacocks giving baby Jesus the squint, but, at Heaton, they’re part of the family. The peacocks, like the park’s deciduous trees, showcase full plumage in the summer months but shed their long feathers in winter. There’s a good chance of picking one up to take home and, unlike a leaf, it won’t end up crumbling into the carpet.</p>
+    <p class="w3-justify">&nbsp;Also seasonal are Heaton’s ice skating rink (housed in a fairy-lit marquee) and rowing boats, which are in action only when the weather permits. Although Heaton has taken a funding-cuts hit of late, the park’s other activities are still going strong, with beekeeping, astronomy evenings, angling, bowls, yoga, a fully-functioning electric tramway, croquet and, for pitchers and putters of whatever age, golf, still all laid on. Opened in 1912, the Heaton Park 18-hole circuit has won two awards for best municipal course and offers a bar and shop – and views over the Pennines. If you want to pack a day as full as it will go and not have to haul your memories (and body) all the way home in the evening, the park’s 18th-century Smithy has been done up as accommodation for the night.&nbsp; </p>
+	  <p class="w3-justify">Yet even the simplest trip to Heaton has its own attraction. Walks in winter can be magical – the pleasure of stamping on an icy puddle, cracking it like a crème brûlée, is hard to beat. Studying leaves veined with frost, skimming stones across a lake threadbare with ice and trying to tip snow down someone else’s neck all feel like an important part of childhood – and something not to be forgotten when you’re no longer running around in stripy mittens. With a tram stop nearby, Heaton Park is lazily easy to get to, so there’s nothing stopping you from rediscovering splendour in the grass and glory in the flowers. When few good things in life come this cheaply, a trip to Heaton Park is well worth it: if only to remember delight in small pleasures.</p>
+	<br>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2371.173852423521!2d-2.2449842228726236!3d53.53680997234514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb006264fc2c9%3A0x2581bc3b9853b122!2sHeaton%20Park!5e0!3m2!1sen!2suk!4v1717768608399!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<br>
+	<div class="w3-container w3-content w3-center w3-padding-64" >
+	<img src="images/mayfieldpark.png" alt="Picture of Mayfield Park"  class="center" style="width:45%;height:45%;align:center;">
+    <p class="w3-opacity"><i></i><p> 
+    <p class="w3-justify">Manchester has a new green heart: The 6.5 acre Mayfield Park, complete with the largest public playground in the city.</p>
+    <p class="w3-justify">&nbsp;You’ve probably know all about the wider Mayfield project already. If not, Mayfield is a 24-acre site on the south side of Fairfield Street next to Manchester Piccadilly station – a former industrial heartland. Packed with heritage and the River Medlock flowing through its core, the long-derelict site is now being regenerated into a modern “innovation quarter” and urban neighbourhood, which already boasts the 10,000 capacity culture venue Mayfield Depot and cavernous foodie spot Escape to Freight Island.&nbsp; </p>
+	  <p class="w3-justify">A defining feature of this new community is Mayfield Park – the kind of sprawling green space that Mancs have been begging for for years. It includes an urban square with a buzz of activities; open greens for lawn sport; adventure play areas; floodable meadows and biodiverse ecological areas beside the river; and quieter spaces for escaping busy city life.</p>
+		<br>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.648404635159!2d-2.2282552228758736!3d53.474743472326765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1d3fbe18b81%3A0x4e0036456d06cca8!2sMayfield%20Park!5e0!3m2!1sen!2suk!4v1717768682551!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+		 </div>
+
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    </div>
+	<div class="w3-container w3-content w3-center w3-padding-64" >
+		<form id="contact-form">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" required><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" required><br>
+  <label for="message">Message:</label><br>
+  <textarea id="message" required></textarea><br>
+  <input type="submit" value="Submit">
+</form>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-red w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+
+</body>
+</html>
