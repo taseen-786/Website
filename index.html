@@ -51,17 +51,20 @@ form.addEventListener('submit', (event) => {
     // Form is invalid, display an error message
   }
 });
+</script>
+<script language="JavaScript"> 
+var i = 0; var path = new Array(); 
 
 // LIST OF IMAGES 
-path[0] = "images/RHSgarden.png"; 
-path[1] = "images/RHSgarden2.png"; 
+path[0] = "images/rhsgarden.png"; 
+path[1] = "images/rhsgarden2.png"; 
 
 function swapImage() 
 { 
 document.slide.src = path[i]; 
 if(i < path.length - 1) i++; 
 else i = 0; 
-setTimeout("swapImage()",15000); 
+setTimeout("swapImage()",5000); 
 } 
 window.onload=swapImage; 
 </script> 
@@ -102,8 +105,8 @@ window.onload=swapImage; 
   <div class="w3-black w3-center" id="parks">
    <h1> Parks&nbsp;</h1>
 	</div>
-	 <div class="w3-container w3-content w3-center w3-padding-64" >
-		 <img height="45%" name="slide" src="images/RHSgarden.png" width="55%" />
+     <div class="w3-container w3-content w3-center w3-padding-64" >
+		 <img height="45%" name="slide" src="images/rhsgarden.png" width="55%" />
 
     <p class="w3-opacity"><i></i><p> 
     <p class="w3-justify">Are you looking for a family day out in Manchester where you can appreciate nature? After four years of digging, building and planting, the spectacular 154-acre RHS Bridgewater Garden in Salford opened to the public in 2021, and continues to beckon outdoor enthusiasts of all ages.</p>
